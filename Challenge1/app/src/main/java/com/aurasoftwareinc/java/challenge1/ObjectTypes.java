@@ -22,6 +22,25 @@ public class ObjectTypes implements JsonMarshalInterface
     public Byte[] objByteArray;
     public Byte[] objByteArrayNull;
 
+    public ObjectTypes(Byte objByte, Short objShort, Integer objInt, Long objLong, Float objFloat, Double objDouble, Double objDoubleNull, Boolean objBoolean, Boolean objBooleanNull, String objString, String objStringNull, Byte[] objByteArray, Byte[] objByteArrayNull) {
+        this.objByte = objByte;
+        this.objShort = objShort;
+        this.objInt = objInt;
+        this.objLong = objLong;
+        this.objFloat = objFloat;
+        this.objDouble = objDouble;
+        this.objDoubleNull = objDoubleNull;
+        this.objBoolean = objBoolean;
+        this.objBooleanNull = objBooleanNull;
+        this.objString = objString;
+        this.objStringNull = objStringNull;
+        this.objByteArray = objByteArray;
+        this.objByteArrayNull = objByteArrayNull;
+    }
+
+    public ObjectTypes() {
+    }
+
     public void populateTestData()
     {
         objByte = 42;

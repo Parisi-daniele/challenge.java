@@ -8,6 +8,14 @@ public class JSONTypes implements JsonMarshalInterface
     public JSONObject jsonObject;
     private JSONArray jsonArray;
 
+    public JSONTypes(JSONObject jsonObject, JSONArray jsonArray) {
+        this.jsonObject = jsonObject;
+        this.jsonArray = jsonArray;
+    }
+
+    public JSONTypes() {
+    }
+
     public void populateTestData()
     {
         try

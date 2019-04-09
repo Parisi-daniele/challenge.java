@@ -14,6 +14,20 @@ public class PrimitiveTypes implements JsonMarshalInterface
 
     public byte[] primByteArray;
 
+    public PrimitiveTypes(byte primByte, short primShort, int primInt, long primLong, float primFloat, double primDouble, boolean primBoolean, byte[] primByteArray) {
+        this.primByte = primByte;
+        this.primShort = primShort;
+        this.primInt = primInt;
+        this.primLong = primLong;
+        this.primFloat = primFloat;
+        this.primDouble = primDouble;
+        this.primBoolean = primBoolean;
+        this.primByteArray = primByteArray;
+    }
+
+    public PrimitiveTypes() {
+    }
+
     public void populateTestData()
     {
         primByte = 42;

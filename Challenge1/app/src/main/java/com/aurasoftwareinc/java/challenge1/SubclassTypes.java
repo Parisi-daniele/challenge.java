@@ -31,4 +31,8 @@ public class SubclassTypes implements JsonMarshalInterface
     {
         return JsonMarshal.unmarshalJSON(this, json);
     }
+
+    public void setObjectTypes(ObjectTypes objectTypes) {
+        this.objectTypes = objectTypes;
+    }
 }
